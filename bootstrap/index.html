@@ -9,7 +9,247 @@
 
 <body>
 
+<style>
+  body {
+    text-align: center;
+  }
 
+  p {
+    margin: 0;
+  }
 
+  .col-h-1_r{
+    min-height: 1rem;
+  }
+
+  .col-h-1_5_r{
+    min-height: 1.5rem;
+  }
+
+  .col-h-3_5_r{
+    min-height: 3.5rem;
+  }
+
+  .col-h-5_r{
+    min-height: 5rem;
+  }
+
+  .bg-red{
+    background-color: red;
+  }
+
+  .bg-blue{
+    background-color: blue;
+  }
+
+  .bg-light-green{
+    background-color: greenyellow;
+  }
+
+  .bg-salmon{
+    background-color: salmon;
+  }
+
+  .bg-pink{
+    background-color: fuchsia;
+  }
+
+  .bg-light-blue{
+    background-color: rgb(98, 126, 217);
+  }
+  
+  .bg-gray{
+    background-color: rgb(141, 141, 141);
+  }
+
+  .bg-cyan{
+    background-color: cyan;
+  }
+
+  .bg-yellow{
+    background-color: rgb(236, 221, 13);
+  }
+
+  .img{
+    height: 10rem;
+    width: 100%;
+    background-color: rgb(81, 0, 128);
+  }
+
+  @media(min-width: 576px){
+    .hq{
+      background-color: cyan;
+    }
+    .cn2{
+      background-color: red;
+    }
+    .cn3{
+      background-color: greenyellow;
+    }
+  }
+
+  @media(min-width: 768px){
+    .hq{
+      background-color: greenyellow;
+    }
+    .cn3{
+      background-color: red;
+    }
+
+    .cn1, .cn2, .cn3{
+      height: 9rem;
+    }
+  }
+</style>
+
+<h1 class="text-primary">Ejercicios Bootstrap</h1>
+<hr>
+<h2 class="text-success">Grid sencillos</h2>
+<h3 class="text-secondary">Ejercicio Grid 1</h3>
+<div class="container-sm">
+  <div class="row gy-1 gx-1">
+    <div class="col-sm-12 col-h-1_5_r bg-red border border-dark border-2"></div>
+    <div class="col-sm-2 col-h-1_5_r bg-blue border border-dark border-2"></div>
+    <div class="col-sm-10 col-h-1_5_r bg-light-green border border-dark border-2"></div>
+  </div>
+</div>
+
+<h3 class="text-secondary m-3">Ejercicio Grid 2</h3>
+<div class="container-sm">
+  <div class="row gx-1 gy-1">
+    <div class="col-h-1_5_r bg-light-green col-12 border border-dark border-2"></div>
+    <div class="col-h-1_5_r bg-red col-sm-2 border border-dark border-2"></div>
+    
+    <div class="col-sm-10 border border-secondary row gx-1 gy-1">
+      <div class="col-h-1_5_r bg-pink col-12 border border-dark border-2"></div>
+      <div class="col-h-5_r bg-salmon col-md-6 border border-dark border-2"></div>
+      <div class="col-h-5_r bg-salmon col-md-6 border border-dark border-2"></div>
+      <div class="col-h-3_5_r bg-blue col-6 col-sm-4 col-md-2 border border-dark border-2"></div>
+      <div class="col-h-3_5_r bg-blue col-6 col-sm-4 col-md-2 border border-dark border-2"></div>
+      <div class="col-h-3_5_r bg-blue col-6 col-sm-4 col-md-4 border border-dark border-2"></div>
+      <div class="col-h-3_5_r bg-blue col-6 col-sm-4 col-md-2 border border-dark border-2"></div>
+      <div class="col-h-3_5_r bg-blue col-6 col-sm-4 col-md-2 border border-dark border-2"></div>
+      <div class="col-h-3_5_r bg-blue col-6 col-sm-4 col-md-2 border border-dark border-2"></div>
+      <div class="col-h-3_5_r bg-blue col-6 col-sm-4 col-md-2 border border-dark border-2"></div>
+      <div class="col-h-3_5_r bg-blue col-6 col-sm-4 col-md-4 border border-dark border-2"></div>
+      <div class="col-h-3_5_r bg-blue col-6 col-sm-4 col-md-2 border border-dark border-2"></div>
+      <div class="col-h-3_5_r bg-blue col-6 col-sm-4 col-md-2 border border-dark border-2"></div>
+    </div>
+
+    <div class="col-h-1_r bg-light-green col border border-dark border-2"></div>
+  </div>
+</div>
+<hr>
+
+<hr>
+<h2 class="text-success">Grids - Offset y personalización</h2>
+<h3 class="text-secondary">Ejercicio Offset 1</h3>
+
+<div class="container-sm fw-semibold">
+  <div class="row gx-1 gy-1">
+    <div class="bg-light-green col-12 border border-dark border-2 p-1 fst-italic"><p>Header</p></div>
+    <div class="row gx-1 gy-1">
+      <div class="bg-light-blue col-6 col-sm-3 offset-md-3 border border-dark border-2 p-4 align-middle">1</div>
+      <div class="bg-light-blue col-6 col-sm-3 border border-dark border-2 p-4 align-middle">2</div>
+      <div class="w-100 d-none d-md-block"></div>
+      <div class="bg-light-blue col-6 col-sm-3 border border-dark border-2 p-4 align-middle">3</div>
+      <div class="bg-light-blue col-6 col-sm-3 offset-md-6 border border-dark border-2 p-4 align-middle">4</div>
+    </div>
+    
+    <div class="bg-cyan col-12 d-none d-sm-block d-md-none border border-dark border-2 p-2 fst-italic">Tablet</div>
+    <div class="row gx-1 gy-1">
+      <div class="bg-gray col-6 col-sm-3 order-md-last border border-dark border-2 p-4 align-middle">a</div>
+      <div class="bg-gray col-6 col-sm-3 border border-dark border-2 p-4 align-middle">b</div>
+      <div class="bg-gray col-6 col-sm-3 border border-dark border-2 p-4 align-middle">c</div>
+      <div class="bg-gray col-6 col-sm-3 order-md-first border border-dark border-2 p-4 align-middle">d</div>
+    </div>
+
+    <div class="bg-cyan col-12 d-sm-none border border-dark border-2 p-2 fst-italic">Mobile</div>
+    <div class="bg-cyan col-12 d-none d-md-block border border-dark border-2 p-2 fst-italic">Desktop</div>
+
+    <div class="row gx-1 gy-1">
+      <div class="bg-salmon col-12 col-sm-6 col-md-3 order-md-last border border-dark border-2 p-4 align-middle fst-italic">:D</div>
+      <div class="bg-salmon col-sm-6 col-md-3 offset-md-4 d-none d-sm-block order-md-first border border-dark border-2 p-4 align-middle fst-italic">:(</div>
+    </div>
+
+    <div class="bg-light-green col-12 border border-dark border-2 fst-italic">Footer</div>
+  </div>
+</div>
+
+<h3 class="text-secondary m-3">Ejercicio Query 1</h3>
+<div class="container-sm fw-semibold">
+  <div class="row gy-1 gx-1">
+    <div class="hq bg-salmon col-12 border border-dark border-2 fst-italic text-sm-start p-1">Header</div>
+  </div>
+  <div class="row gy-1 gx-1 fs-1">
+    <div class="cn1 bg-red col-12 col-sm-6 col-md-4 border border-dark border-2 p-2 p-sm-4 p-md-2 text-start text-md-center">1</div>
+    <div class="cn2 bg-cyan col-12 col-sm-6 col-md-4 border border-dark border-2 p-2 p-sm-4 p-md-2 text-sm-end text-md-center">2</div>
+    <div class="cn3 bg-red col-12 col-md-4 border border-dark border-2 p-2 p-sm-2 text-end text-sm-center">3</div>
+  </div>
+  <div class="row gy-1 gx-1 fst-italic">
+    <div class="bg-yellow col-12 col-md-6 border border-dark border-2 text-md-end">Footer 1</div>
+    <div class="bg-yellow col-12 col-md-6 border border-dark border-2 text-md-start">Footer 2</div>
+  </div>
+</div>
+<hr>
+
+<h2 class="text-success">Grids - Maquetación de Componentes</h2>
+<div class="container-sm">
+  <div class="row">
+    <div class="bg-blue col-12 fw-semibold text-white p-1 mb-2">Cabecera</div>
+  </div>
+  <div class="row gy-2">
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card">
+        <div class="img"></div>
+        <div class="card-body">
+          <h4 class="fs-4">Título</h4>
+          <p class="card-text text-wrap">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary my-3">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card">
+        <div class="img"></div>
+        <div class="card-body">
+          <h4 class="fs-4">Título</h4>
+          <p class="card-text text-wrap">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary my-3">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card">
+        <div class="img"></div>
+        <div class="card-body">
+          <h4 class="fs-4">Título</h4>
+          <p class="card-text text-wrap">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary my-3">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card">
+        <div class="img"></div>
+        <div class="card-body">
+          <h4 class="fs-4">Título</h4>
+          <p class="card-text text-wrap">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary my-3">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card">
+        <div class="img"></div>
+        <div class="card-body">
+          <h4 class="fs-4">Título</h4>
+          <p class="card-text text-wrap">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary my-3">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
