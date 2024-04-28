@@ -1,0 +1,23 @@
+$colores: red, blue, green, yellow, purple;
+
+@mixin set-opacity($color, $opacity){
+    color: $color;
+    opacity: $opacity;
+}
+
+@for $i from 1 through length($colores) {
+    $color: nth($colores, $i);
+    .text-#{$color} {
+    @if $i % 2 == 0 {
+        @include set-opacity($color, 0.1);
+    }
+    @else {
+        @include set-opacity($color, 0.2);
+    }
+    }
+}
+
+#textos {
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+}

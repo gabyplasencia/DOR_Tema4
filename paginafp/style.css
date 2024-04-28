@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --gris: #666666;
+    --negro: #333333;
+    --verde: #3E9722;
+    --naranja: #E58C24;
+    --azul: #3C74E6;
+    --verde-claro: #CAE646;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    padding: 20px;
+    width: 99%;
+    margin: 0.5% auto;
+    justify-content: space-between;
+    align-items: end;
+    background: linear-gradient( var(--verde), var(--verde-claro), white);
+    border-radius: 15px;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.wrapper-titulo > strong{
+    font-weight: 900;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 0.2rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 900;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, rgb(216, 255, 204), white, rgb(216, 255, 204));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 300ms;
+}
+
+.nav__link:hover {
+    background: var(--naranja);
+}
+
+/* MAIN */
+
+.container {
+    width: 99%;
+    margin: 0.5% auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 0.3fr;
+    gap: 20px;
+}
+
+.section__title {
+    background-color: var(--azul);
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.section__title > span {
+    font-size: 0.8rem;
+}
+
+.content-wrapper {
+    margin: 1rem;
+}
+
+section + section {
+    margin-top: 3rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* USUARIOS */
+
+.seccion-usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    margin-bottom: 0.5rem;
+}
+
+.input-wrapper > label {
+    font-weight: 600;
+}
+
+.log-btn {
+    width: fit-content;
+    padding: 0.2rem 0.5rem;
+    margin-block: 0.5rem;
+    border: 2px solid black;
+    border-radius: 3px; 
+    font-weight: 600;
+    background: linear-gradient(rgb(193, 193, 193) 30%, rgb(137, 137, 137));
+}
+
+.link {
+    color: rgb(15, 118, 15);
+    font-weight: 600;
+}
+
+/* UNIDADES DE TRABAJO */
+
+.unidad-wrapper {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.unidad__titulo {
+    margin-bottom: 0.4rem;
+}
+
+.unidad__desc {
+    color: rgb(15, 118, 15);
+}
+
+/* BIENVENIDO */
+
+.imgfp {
+    height: 150px;
+    aspect-ratio: 1;
+    background-color: rgb(210, 210, 210);
+    float: left;
+    display: grid;
+    place-items: center;
+    margin-right: 1rem;
+}
+
+.imgfp > p {
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgb(0, 73, 0);
+}
+
+.texto-b {
+    line-height: 1.7;
+    font-weight: 600;
+}
+
+.dashed-hr {
+    width: 100%;
+    height: 2px;
+    border: 1px dashed rgb(198, 198, 198);
+}
+
+.section-footer {
+    margin-top: 2.2rem;
+}
+
+.texto-setion-footer {
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* HOJAS DE ESTILOS */
+
+.hojas-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+.hojas-content > p:nth-child(1),
+.hojas-content > ol {
+    margin-left: 2rem;
+}
+
+/* WEBS DE INTERES */
+
+.ul-webs {
+    line-height: 1.6;
+    list-style-position: inside;
+}
+
+.img-derecha {
+    height: 100%;
+    width: 70%;
+    background: linear-gradient(rgb(0, 40, 0), rgb(187, 230, 187));
+    margin: 20px;
+}
+
+.col-derecha > section {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+/* FOOTER */
+
+.page__footer {
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-top: 4px solid var(--verde-claro) ;
+    border-left: 4px solid var(--verde-claro) ;
+    border-right: 4px solid var(--verde-claro) ;
+    border-radius: 18px;
+}
+
+.page__footer > p {
+    margin-top: 1rem;
+}
+
+.page__footer > p > a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: black;
+}
+
+
+

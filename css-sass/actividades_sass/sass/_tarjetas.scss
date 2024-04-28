@@ -1,0 +1,40 @@
+#tarjetas {
+    margin-top: 20rem;
+}
+
+.wrapper-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@mixin estilo-tarjeta($color-border, $color-fondo, $color-texto, $fuente){
+    border: 1px solid $color-border;
+    background-color: $color-fondo;
+    color: $color-texto;
+    font-family: $fuente;
+    box-shadow: 0 0 20px -8px rgb(105, 105, 105);
+    width: 20rem;
+    padding: 20px;
+    text-align: left;
+}
+
+.clasica {
+    @include estilo-tarjeta(#000, #fff, #000, 'Times New Roman')
+}
+
+.atrevida {
+    @include estilo-tarjeta(#ff0000, #000, #fff, 'Arial')
+}
+
+.formal {
+    @include estilo-tarjeta(#000, #ddd, #000, 'Georgia')
+}
+
+.colonial {
+    @include estilo-tarjeta(#663300, #ffffcc, #000, 'Courier')
+}
+
+.infantil {
+    @include estilo-tarjeta(#ff69b4, #fff0f5, #000, 'Comic Sans MS')
+}

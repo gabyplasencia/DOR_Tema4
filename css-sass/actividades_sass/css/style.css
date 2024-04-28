@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+#pelotas {
+  position: relative;
+}
+
+.suelo {
+  position: absolute;
+  top: 260px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #804000;
+}
+
+.pelota {
+  position: absolute;
+  animation: rebote 3000ms linear infinite;
+  left: 0;
+  top: 0;
+}
+
+.pelota:nth-child(10n+1) {
+  animation-delay: 100ms;
+  fill: #044104;
+}
+
+.pelota:nth-child(10n+2) {
+  animation-delay: 200ms;
+  fill: #077107;
+}
+
+.pelota:nth-child(10n+3) {
+  animation-delay: 300ms;
+  fill: #0aa20a;
+}
+
+.pelota:nth-child(10n+4) {
+  animation-delay: 400ms;
+  fill: #0cd20c;
+}
+
+.pelota:nth-child(10n+5) {
+  animation-delay: 500ms;
+  fill: #1ff21f;
+}
+
+.pelota:nth-child(10n+6) {
+  animation-delay: 600ms;
+  fill: #4ff54f;
+}
+
+.pelota:nth-child(10n+7) {
+  animation-delay: 700ms;
+  fill: #80f880;
+}
+
+.pelota:nth-child(10n+8) {
+  animation-delay: 800ms;
+  fill: #b0fab0;
+}
+
+.pelota:nth-child(10n+9) {
+  animation-delay: 900ms;
+  fill: #e0fde0;
+}
+
+.pelota:nth-child(10n+10) {
+  animation-delay: 1000ms;
+  fill: white;
+}
+
+@keyframes rebote {
+  16% {
+    top: 190px;
+    animation-timing-function: ease-out;
+  }
+  32% {
+    top: 33px;
+    animation-timing-function: ease-in;
+  }
+  48% {
+    top: 190px;
+    animation-timing-function: ease-out;
+  }
+  62% {
+    top: 90px;
+    animation-timing-function: ease-in;
+  }
+  78% {
+    top: 190px;
+    animation-timing-function: ease-out;
+  }
+  90% {
+    top: 150px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    top: 190px;
+    animation-timing-function: ease-out;
+    left: 100%;
+  }
+}
+#tarjetas {
+  margin-top: 20rem;
+}
+
+.wrapper-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.clasica {
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  font-family: "Times New Roman";
+  box-shadow: 0 0 20px -8px rgb(105, 105, 105);
+  width: 20rem;
+  padding: 20px;
+  text-align: left;
+}
+
+.atrevida {
+  border: 1px solid #ff0000;
+  background-color: #000;
+  color: #fff;
+  font-family: "Arial";
+  box-shadow: 0 0 20px -8px rgb(105, 105, 105);
+  width: 20rem;
+  padding: 20px;
+  text-align: left;
+}
+
+.formal {
+  border: 1px solid #000;
+  background-color: #ddd;
+  color: #000;
+  font-family: "Georgia";
+  box-shadow: 0 0 20px -8px rgb(105, 105, 105);
+  width: 20rem;
+  padding: 20px;
+  text-align: left;
+}
+
+.colonial {
+  border: 1px solid #663300;
+  background-color: #ffffcc;
+  color: #000;
+  font-family: "Courier";
+  box-shadow: 0 0 20px -8px rgb(105, 105, 105);
+  width: 20rem;
+  padding: 20px;
+  text-align: left;
+}
+
+.infantil {
+  border: 1px solid #ff69b4;
+  background-color: #fff0f5;
+  color: #000;
+  font-family: "Comic Sans MS";
+  box-shadow: 0 0 20px -8px rgb(105, 105, 105);
+  width: 20rem;
+  padding: 20px;
+  text-align: left;
+}
+
+.text-red {
+  color: red;
+  opacity: 0.2;
+}
+
+.text-blue {
+  color: blue;
+  opacity: 0.1;
+}
+
+.text-green {
+  color: green;
+  opacity: 0.2;
+}
+
+.text-yellow {
+  color: yellow;
+  opacity: 0.1;
+}
+
+.text-purple {
+  color: purple;
+  opacity: 0.2;
+}
+
+#textos {
+  padding: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(233, 233, 233);
+  text-align: center;
+}
+
+section {
+  margin-block: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(128, 128, 221);
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
