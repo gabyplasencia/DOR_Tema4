@@ -10,23 +10,24 @@ import twitter from "./assets/twitter.png";
 
 function App() {
   return (
-    <body>
+    <body className="bg-blue-500">
       <header>
-        <nav>
-          <a href="./">
-            <h2>Landing.</h2>
+        <nav className="py-6 text-neutral-50 text-center grid gap-6 bg-red-200 w-11/12 max-w-screen-xl mx-auto overflow-hidden md:grid-cols-2">
+          <a href="./" className="md:text-left">
+            <h2 className="text-3xl font-extrabold">Landing.</h2>
           </a>
-          <div>
-            <a href="#">Inicio</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Proyecto</a>
+          <div className="md:text-right">
+            <a href="#" className="px-2">Inicio</a>
+            <a href="#" className="px-2">Habilidades</a>
+            <a href="#" className="px-2">Proyecto</a>
           </div>
         </nav>
-        <section>
-          <img src={heroMe} />
+        {/*use la clase min-h-fit porque en la página de tailwind no consegui ningunca clase que se acercara a la medida de 600px, asi que use min-height para asegurar que siempre ocupe el contenido*/}
+        <section className="w-11/12 min-h-fit max-w-screen-xl mx-auto overflow-hidden py-14 flex flex-col items-center text-center gap-12 md:w-3/5 md:items-start md:flex-row">
+          <img src={heroMe} className="max-w-lg w-full md:w-2/5" />
 
-          <div>
-            <h1>Mi nombre es David y estaré encantado de ayudarte.</h1>
+          <div className="text-neutral-50 flex flex-col gap-6 md:text-left">
+            <h1 className="text-3xl font-bold md:text-4xl">Mi nombre es David y estaré encantado de ayudarte.</h1>
 
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi
@@ -44,7 +45,7 @@ function App() {
               at, lobortis fermentum orci.
             </p>
 
-            <a href="#">¡Contáctame ahora!</a>
+            <a href="#" className="inline-block font-bold bg-slate-700 py-4 px-8 rounded-xl w-fit mx-auto md:mx-0">¡Contáctame ahora!</a>
           </div>
         </section>
       </header>
